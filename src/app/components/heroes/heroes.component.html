@@ -1,0 +1,15 @@
+<h1 class="display-3">List Heroes</h1>
+
+
+<div *ngFor="let heroe of heroes;   let i = index" class="list-group list-group-flush col-2">
+
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            {{ heroe.name }}
+          <span class="badge bg-primary rounded-pill">{{ heroe.id }}</span>
+        </li>
+    </ul>
+
+    
+
+</div>

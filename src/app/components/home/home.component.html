@@ -1,0 +1,22 @@
+<div class="row">
+  <h1 class="display-3">Top Heroes</h1>
+
+
+  <div *ngFor="let heroe of heroes;   let i = index" class="list-group list-group-flush col-2">
+
+
+
+    <div  style="width: 20rem; "  *ngIf="i<4">
+
+
+      <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">
+          <li *ngIf="i<4">{{ heroe.name }} </li>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
